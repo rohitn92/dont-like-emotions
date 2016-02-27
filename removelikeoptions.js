@@ -3,14 +3,27 @@ var byebyeemotions = function() {
   for(var i=0 ; i<likeHover.length ; i++) {
     likeHover[i].remove()
   }
+  return true;
 }
 window.addEventListener ('load', function () {
   setTimeout(function () {
     console.log(byebyeemotions())
-  }, 1000)
+  }, 1000);
+
+  setTimeout(function () {
+    console.log(byebyeemotions())
+  }, 7000);
+
+
+  setTimeout(function () {
+    console.log(byebyeemotions())
+  }, 15000);
+
+
 }, false);
 
-$(document).ready(function(){
+
+
 
 $(document).on("scroll", function(){
 
@@ -18,4 +31,3 @@ $(document).on("scroll", function(){
 
 	
 		});
-});
