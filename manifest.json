@@ -7,7 +7,7 @@
     {
       "matches": ["*://*.facebook.com/*"],
       "css": ["style.css"],
-      "js": ["removelikeoptions.js"],
+      "js": ["jquery.min.js", "removelikeoptions.js"],
       "run_at": "document_end"
     }
   ],
