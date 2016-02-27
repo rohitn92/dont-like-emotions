@@ -5,9 +5,14 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://www.facebook.com/*"],
+      "matches": ["*://*.facebook.com/*"],
       "css": ["style.css"],
-      "js": ["jquery.min.js", "removelikeoptions.js"]
+      "js": ["removelikeoptions.js"],
+      "run_at": "document_end"
     }
+  ],
+  "permissions": [
+    "tabs",
+    "*://*.facebook.com/*"
   ]
 }

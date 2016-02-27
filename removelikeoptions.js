@@ -1,16 +1,11 @@
-document.onload=function() {
-
-
-setTimeout(byebyeemotions, 10000);
-
-  };
-
-
-function byebyeemotions() {
-
-  var nomorelikes = document.getElementsByClassName('_1oxj');
-  for (var i = 0; i < nomorelikes.length; i ++) {
-      nomorelikes[i].style.display = 'none';
-    }
-
+var byebyeemotions = function() {
+  var likeHover = document.querySelectorAll('._1oxj');
+  for(var i=0 ; i<likeHover.length ; i++) {
+    likeHover[i].remove()
+  }
 }
+window.addEventListener ('load', function () {
+  setTimeout(function () {
+    console.log(byebyeemotions())
+  }, 2000)
+}, false)
