@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://facebook.com/*"],
+      "matches": ["https://www.facebook.com/*"],
       "css": ["style.css"],
       "js": ["jquery.min.js", "removelikeoptions.js"]
     }

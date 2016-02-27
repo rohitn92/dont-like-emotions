@@ -1,9 +1,9 @@
-$(document).load(function() {
+document.onload=function() {
 
 
 setTimeout(byebyeemotions, 10000);
 
-  });
+  };
 
 
 function byebyeemotions() {
