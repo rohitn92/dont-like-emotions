@@ -1,0 +1,13 @@
+{
+  "name": "Don't Like Emotions",
+  "version": "0.1",
+  "description": "Removes facebook reactions",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://facebook.com/*"],
+      "css": ["style.css"],
+      "js": ["jquery.min.js", "removelikeoptions.js"]
+    }
+  ]
+}
